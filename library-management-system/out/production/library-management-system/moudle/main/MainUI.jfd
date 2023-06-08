@@ -1,0 +1,66 @@
+JFDML JFormDesigner: "8.0.5.0.268" Java: "17.0.6" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+			name: "this"
+			"title": "图书管理系统"
+			"$sizePolicy": 1
+			add( new FormContainer( "javax.swing.JDesktopPane", new FormLayoutManager( class javax.swing.JDesktopPane ) ) {
+				name: "table"
+			}, new FormLayoutConstraints( class java.lang.String ) {
+				"value": "Center"
+			} )
+			menuBar: new FormContainer( "javax.swing.JMenuBar", new FormLayoutManager( class javax.swing.JMenuBar ) ) {
+				name: "menuBar1"
+				add( new FormContainer( "javax.swing.JMenu", new FormLayoutManager( class javax.swing.JMenu ) ) {
+					name: "menu1"
+					"text": "基本数据维护"
+					add( new FormContainer( "javax.swing.JMenu", new FormLayoutManager( class javax.swing.JMenu ) ) {
+						name: "menu3"
+						"text": "图书管理类别"
+						add( new FormComponent( "javax.swing.JMenuItem" ) {
+							name: "menuItem2"
+							"text": "图书类别添加"
+							addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "menuItem2", true ) )
+						} )
+						add( new FormComponent( "javax.swing.JMenuItem" ) {
+							name: "menuItem3"
+							"text": "图书类别维护"
+						} )
+					} )
+					add( new FormContainer( "javax.swing.JMenu", new FormLayoutManager( class javax.swing.JMenu ) ) {
+						name: "menu4"
+						"text": "图书管理"
+						add( new FormComponent( "javax.swing.JMenuItem" ) {
+							name: "menuItem4"
+							"text": "图书添加"
+						} )
+						add( new FormComponent( "javax.swing.JMenuItem" ) {
+							name: "menuItem5"
+							"text": "图书维护"
+						} )
+					} )
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "menuItem6"
+						"text": "安全退出"
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "menuItem6", true ) )
+					} )
+				} )
+				add( new FormContainer( "javax.swing.JMenu", new FormLayoutManager( class javax.swing.JMenu ) ) {
+					name: "menu2"
+					"text": "关于我们"
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "menuItem1"
+						"text": "关于yzd11"
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "menuItem1", true ) )
+					} )
+				} )
+			}
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 165, 120 )
+			"size": new java.awt.Dimension( 400, 300 )
+		} )
+	}
+}

@@ -1,0 +1,57 @@
+JFDML JFormDesigner: "8.0.5.0.268" Java: "17.0.6" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq l {space :p:171:p, par l {seq l {par l {comp label1:::p:457:p, seq t {par l {comp label2::t:p:94:p, comp label3::l:p:94:p, comp label4:::p:94:p}, space :89:89:p, par l:::p {comp userNameTxt::::274:x, comp passwordTxt::::274:x, comp userDescTxt::::274:x}}}, space ::170:x}, seq l {space :0:57:x, comp button1:::p::p, space :p:147:p, comp button2:::p::p, space :p:267:p}}}}"
+			"$verticalGroup": "par l {seq l {space :p:32:p, comp label1:::p:39:p, space :p:33:p, par b {comp label2::b:p:36:p, comp userNameTxt::b:p:36:p}, space :p:61:p, par b {comp label3::b:p:31:p, comp passwordTxt::b:p::p}, space :p:57:p, par l {comp userDescTxt:::p:169:p, seq l {space :p:13:p, comp label4:::p:33:p}}, space ::25:x, par b {comp button1::b:p::p, comp button2::b:p::p}, space :p:53:p}}"
+		} ) {
+			name: "this"
+			"title": "注册"
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label1"
+				"text": "欢迎使用图书管理系统"
+				"horizontalAlignment": 0
+				"font": new java.awt.Font( "隶书", 1, 22 )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label2"
+				"text": "用户名："
+				"font": new java.awt.Font( "隶书", 1, 16 )
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "userNameTxt"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label3"
+				"text": "密码："
+				"font": new java.awt.Font( "隶书", 1, 16 )
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "passwordTxt"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label4"
+				"text": "个人介绍："
+				"font": new java.awt.Font( "隶书", 1, 16 )
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "userDescTxt"
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button1"
+				"text": "注册"
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "button1MouseClicked", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button2"
+				"text": "重置"
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "button2MouseClicked", true ) )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 10, 10 )
+			"size": new java.awt.Dimension( 800, 600 )
+		} )
+	}
+}

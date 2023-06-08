@@ -1,0 +1,99 @@
+JFDML JFormDesigner: "8.0.5.0.268" Java: "17.0.6" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormContainer( "javax.swing.JInternalFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq l {space :p:109:p, par l {comp scrollPane1:::p:554:p, seq {comp label1:::p:121:p, space u:::p, comp s_bookTypeNameTXT:::p:263:p, space :p:85:p, comp button1:::p::p}, comp panel1::l:::x}, space ::132:x}}"
+			"$verticalGroup": "par l {seq l {space :p:37:p, par b {comp label1::b:p:31:p, comp s_bookTypeNameTXT::b:p::p, comp button1::b:p::p}, space :p:33:p, comp scrollPane1:::p:187:p, space :p:29:p, comp panel1:::p::p, space ::45:x}}"
+		} ) {
+			name: "this"
+			"visible": true
+			"title": "图书类别管理"
+			"closable": true
+			"iconifiable": true
+			add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+				name: "scrollPane1"
+				add( new FormComponent( "javax.swing.JTable" ) {
+					name: "bookTypeTable"
+					"model": new com.jformdesigner.model.SwingTableModel( new java.util.Vector, new java.util.Vector {
+						add( "编号" )
+						add( "图书类型名称" )
+						add( "图书类型描述" )
+					}, new java.util.Vector {
+						add( null )
+						add( null )
+						add( null )
+					}, new java.util.Vector {
+						add( false )
+						add( null )
+						add( false )
+					}, new java.util.Vector {
+						add( null )
+						add( null )
+						add( null )
+					} )
+					addEvent( new FormEvent( "java.awt.event.MouseListener", "mousePressed", "bookTypeTableMousePressed", true ) )
+				} )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label1"
+				"text": "图书类型名称："
+				"font": new java.awt.Font( "隶书", 1, 14 )
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "s_bookTypeNameTXT"
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button1"
+				"text": "查询"
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "button1MouseClicked", true ) )
+			} )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+				"$horizontalGroup": "par l {seq l {space :p:21:p, par l:::p {comp label4:::::x, comp label2:::::x}, space :::p, par l {par l:::p {seq {comp idTXT:::p:87:p, space :p:40:p, comp label3:::p::p, space :p:28:p, comp bookTypeNameTXT:::p:162:p}, comp bookTypeDescTXT:::::x}, seq {space :p:54:p, comp button2:::p::p, space :p:120:p, comp button3:::p::p}}, space :::x}}"
+				"$verticalGroup": "par l {seq l {space :p:21:p, par b {comp label2::b:p:37:p, comp idTXT::b:p::p, comp label3::b:p:37:p, comp bookTypeNameTXT::b:p::p}, space :::p, par b {comp label4::b:p:40:p, comp bookTypeDescTXT::b:p:75:p}, space :::p, par b {comp button2::b:p::p, comp button3::b:p::p}, space ::20:x}}"
+			} ) {
+				name: "panel1"
+				"border": new javax.swing.border.TitledBorder( null, "表单操作", 0, 1, new java.awt.Font( "隶书", 1, 16 ), null )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label2"
+					"text": "编号："
+					"font": new java.awt.Font( "隶书", 1, 16 )
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "idTXT"
+					"editable": false
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label3"
+					"text": "图书类别名称："
+					"font": new java.awt.Font( "隶书", 1, 16 )
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "bookTypeNameTXT"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label4"
+					"text": "描述："
+					"font": new java.awt.Font( "隶书", 1, 16 )
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "bookTypeDescTXT"
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "button2"
+					"text": "修改"
+					addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "button2MouseClicked", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "button3"
+					"text": "删除"
+					addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "button3MouseClicked", true ) )
+				} )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 5 )
+			"size": new java.awt.Dimension( 800, 600 )
+		} )
+	}
+}

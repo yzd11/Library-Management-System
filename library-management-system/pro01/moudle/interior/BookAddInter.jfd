@@ -1,0 +1,93 @@
+JFDML JFormDesigner: "8.0.5.0.268" Java: "17.0.6" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormContainer( "javax.swing.JInternalFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq l {space :p:116:p, par t {comp label5:::::x, comp label1::t:::x, comp label3::l:::x, comp label6::l:::x}, space :::p, par l {seq {space :p:51:p, comp button1:::p::p, space :p:150:p, comp button2:::p::p}, par l:::p {seq {par l:::p {seq {comp menJrb:::p:67:p, space :::p, comp femaleJrb:::p::p}, comp bookNameTxt:::::x}, space :p:61:p, par l:::p {comp label4:::::x, comp label2:::::x}, space :::p, par l:::p {comp authorTxt::::143:x, comp priceTxt::::143:x}}, comp bookTypeJcb:::p:125:p, comp bookDescTxt::l::406:x}}, space ::189:x}}"
+			"$verticalGroup": "par l {seq l {space :p:43:p, par b {comp label1::b:p:40:p, comp label2::b:p:40:p, comp authorTxt::b:p:42:p, comp bookNameTxt::b:p:43:p}, space :p:60:p, par b {comp menJrb::b:::x, comp femaleJrb::b:p::p, comp label3::b:p:42:p, comp label4::b:p:42:p, comp priceTxt::b:p:42:p}, space :p:51:p, par b {comp label5::b:p:40:p, comp bookTypeJcb::b:p:40:p}, space :p:56:p, par l {comp label6:::p:41:p, comp bookDescTxt:::p:111:p}, space ::43:x, par b {comp button2::b:p::p, comp button1::b:p::p}, space :p:60:p}}"
+		} ) {
+			name: "this"
+			"visible": true
+			"title": "图书添加"
+			"closable": true
+			"iconifiable": true
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label1"
+				"text": "图书名称："
+				"font": new java.awt.Font( "隶书", 1, 16 )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label2"
+				"text": "图书作者："
+				"font": new java.awt.Font( "隶书", 1, 16 )
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "bookNameTxt"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "authorTxt"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label3"
+				"text": "作者性别："
+				"font": new java.awt.Font( "隶书", 1, 16 )
+			} )
+			add( new FormComponent( "javax.swing.JRadioButton" ) {
+				name: "menJrb"
+				"text": "男"
+				"font": new java.awt.Font( "隶书", 1, 16 )
+				"selected": true
+				"$buttonGroup": new FormReference( "buttonGroup1" )
+			} )
+			add( new FormComponent( "javax.swing.JRadioButton" ) {
+				name: "femaleJrb"
+				"text": "女"
+				"font": new java.awt.Font( "隶书", 1, 16 )
+				"$buttonGroup": new FormReference( "buttonGroup1" )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label4"
+				"text": "图书价格："
+				"font": new java.awt.Font( "隶书", 1, 16 )
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "priceTxt"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label5"
+				"text": "图书类别："
+				"font": new java.awt.Font( "隶书", 1, 16 )
+			} )
+			add( new FormComponent( "javax.swing.JComboBox" ) {
+				name: "bookTypeJcb"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label6"
+				"text": "图书描述："
+				"font": new java.awt.Font( "隶书", 1, 16 )
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "bookDescTxt"
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button1"
+				"text": "添加"
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "button1MouseClicked", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button2"
+				"text": "重置"
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "button2MouseClicked", true ) )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 800, 600 )
+		} )
+		add( new FormNonVisual( "javax.swing.ButtonGroup" ) {
+			name: "buttonGroup1"
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 616 )
+		} )
+	}
+}

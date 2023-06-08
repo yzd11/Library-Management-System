@@ -1,0 +1,31 @@
+JFDML JFormDesigner: "8.1.0.0.283" Java: "17.0.6" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormContainer( "javax.swing.JInternalFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq {par l {seq {space :p:256:p, comp label1:::p:241:p}, seq l {space :p:146:p, comp label2:::p:455:p}}, space ::199:x}}"
+			"$verticalGroup": "par l {seq t {space :::p, comp label1:::p:127:p, space :::x, comp label2:::p:216:p, space :p:227:p}}"
+		} ) {
+			name: "this"
+			"visible": true
+			"closable": true
+			"iconifiable": true
+			"title": "关于yzd11"
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label2"
+				"icon": new com.jformdesigner.model.SwingIcon( 0, "/img/Quantum.png" )
+				"horizontalAlignment": 0
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "label2MouseClicked", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label1"
+				"text": " 欢迎访问我的Blog"
+				"font": new java.awt.Font( "华文隶书", 3, 26 )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 5 )
+			"size": new java.awt.Dimension( 800, 600 )
+		} )
+	}
+}

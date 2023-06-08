@@ -1,0 +1,61 @@
+JFDML JFormDesigner: "8.0.5.0.268" Java: "17.0.6" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormContainer( "javax.swing.JInternalFrame", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+			name: "this"
+			"visible": true
+			"closable": true
+			"iconifiable": true
+			"title": "关于yzd11"
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+				name: "panel1"
+			}, new FormLayoutConstraints( class java.lang.String ) {
+				"value": "West"
+			} )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+				name: "panel2"
+			}, new FormLayoutConstraints( class java.lang.String ) {
+				"value": "South"
+			} )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+				name: "panel3"
+			}, new FormLayoutConstraints( class java.lang.String ) {
+				"value": "North"
+			} )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+				name: "panel4"
+			}, new FormLayoutConstraints( class java.lang.String ) {
+				"value": "East"
+			} )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.BorderLayout ) {
+				"vgap": -150
+			} ) {
+				name: "panel5"
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label2"
+					"icon": new com.jformdesigner.model.SwingIcon( 0, "/GitHub-Logo.png" )
+					"horizontalAlignment": 0
+					addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "label2MouseClicked", true ) )
+				}, new FormLayoutConstraints( class java.lang.String ) {
+					"value": "Center"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label1"
+					"text": "欢迎访问我的github"
+					"font": new java.awt.Font( "华文彩云", 3, 22 )
+					"horizontalTextPosition": 0
+					"horizontalAlignment": 0
+				}, new FormLayoutConstraints( class java.lang.String ) {
+					"value": "North"
+				} )
+			}, new FormLayoutConstraints( class java.lang.String ) {
+				"value": "Center"
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 185, 125 )
+			"size": new java.awt.Dimension( 475, 285 )
+		} )
+	}
+}

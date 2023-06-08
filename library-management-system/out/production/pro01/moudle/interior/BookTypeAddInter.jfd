@@ -1,0 +1,46 @@
+JFDML JFormDesigner: "8.0.5.0.268" Java: "17.0.6" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormContainer( "javax.swing.JInternalFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq l {space :p:69:p, par l:::p {comp label1:::::x, comp label2:::::x}, space :p:55:p, par l {seq {par l {seq {comp bookTypeNameTXT:::p:245:p, space :0:295:x}, comp bookTypeDescTXT::::540:x}, space :::p}, seq {comp button1:::p:86:p, space ::182:x, comp button2:::p::p, space :p:200:p}}}}"
+			"$verticalGroup": "par l {seq l {space :p:40:p, par b {comp label1::b:p:30:p, comp bookTypeNameTXT::b:::x}, space :p:38:p, par b {comp label2::b:p:42:p, comp bookTypeDescTXT::b:p:124:p}, space ::121:x, par b {comp button2::b:p:47:p, comp button1::b:p:47:p}, space :p:179:p}}"
+		} ) {
+			name: "this"
+			"visible": true
+			"closable": true
+			"title": "图书类别添加"
+			"iconifiable": true
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label1"
+				"text": "图书类别名称："
+				"font": new java.awt.Font( "隶书", 1, 18 )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label2"
+				"text": "图书类别描述："
+				"font": new java.awt.Font( "隶书", 1, 18 )
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "bookTypeNameTXT"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "bookTypeDescTXT"
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button1"
+				"text": "添加"
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "button1MouseClicked", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button2"
+				"text": "重置"
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "button2MouseClicked", true ) )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 15, 5 )
+			"size": new java.awt.Dimension( 800, 600 )
+		} )
+	}
+}
